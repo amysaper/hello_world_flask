@@ -28,18 +28,23 @@ def jedi (firstname, lastname):
     print jedi_name;
     html = """
         <h1>
-            Hello {firstname} {lastname}!
+            Hello {} {}!
         </h1>
         <h2>
-            Your jedi name is {jedi_name}!
+            Your jedi name is {}!
         </h2>
         <p>
             Here's one of the original jedis!
         </p>
         <img src="http://img2.wikia.nocookie.net/__cb20061223050619/starwars/images/6/61/AnakinSkywalker.jpg">
     """
-    return html.format(jedi_name.title())
+    return html.format(firstname.title(), lastname.title(), jedi_name.title())
 
+
+
+    
 if __name__ == "__main__":
+    print(jedi('amy', 'saper'))
     app.run(host=environ['IP'],
             port=int(environ['PORT']))
+            
