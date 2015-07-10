@@ -39,8 +39,7 @@ def jedi (firstname, lastname):
         <img src="http://img2.wikia.nocookie.net/__cb20061223050619/starwars/images/6/61/AnakinSkywalker.jpg">
     """
     return html.format(firstname.title(), lastname.title(), jedi_name.title())
-
-
+    #firstname = firstname.title() etc for each variable, "named parameters" to convert to Jinja 
 
     
 if __name__ == "__main__":
